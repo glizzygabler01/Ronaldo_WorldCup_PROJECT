@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Ronaldo</title>
+    <link rel="stylesheet" href="Ronaldo.css">
+</head>
+<body>
+    
+
+<div class="Frame"> 
+    
+    
+    <img src="Ronaldovm1.webp" alt="Drømmer om mer">
+    <h1 id="overskrift">Cristiano Ronaldo</h1>
+     <a id="unique-knapp" href="ronaldo-dream.html" target="_blank"></a>
+     <div class="relativ-box">
+        <button><strong>Drømmen til Ronaldo</strong></button>
+    </div>
+
+        
+ </div>  
+
+</body>
+</html>
+
+css:
+body {
+    padding: 0%;
+    height: 100vh;
+    margin: 0%;
+    overflow: hidden;
+}
+
+.Frame {
+    position: relative;
+    border: solid yellow;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+button {
+    border-radius: 5px;
+    background-color: rgb(253, 253, 253);
+    text-align: center;
+    position: absolute;
+    padding: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    border: none;
+    width: 150px;
+    height: 20px;
+    font-size: 13px;
+}
+
+button:hover {
+    background-color: black;
+    color: yellow;
+    cursor: pointer;
+    transform: translateY(-60px);
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    
+    
+}
+
+@keyframes skliFraVenstre {
+    from {
+        transform: translateX(-300px);
+
+    }
+
+    to {
+        transform: translateX(0);
+        
+    }
+}
+
+#overskrift {
+    animation-name: skliFraVenstre;
+    animation-duration: 1s;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
